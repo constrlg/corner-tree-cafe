@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Zen Antique Soft', serif;
+}
+
+:root {
+  --main_color: #3e603b;
+}
+
+#admin_login .admin_login_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+#admin_login .admin_login_content .admin_login_form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_header {
+  background-color: var(--main_color);
+  padding: 10px;
+  text-align: center;
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_header .admin_login_title {
+  font-size: 25px;
+  color: #fff;
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_login_input_info {
+  padding: 20px;
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_login_input_info label {
+  font-size: 18px;
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_login_input_info input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_login_input_info input:focus {
+  background-color: #f1f1f1;
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_login_input_info .admin_login_btn {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  border: none;
+  -webkit-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_login_input_info .admin_login_btn:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: var(--main_color);
+  color: #fff;
+}
+
+#admin_login .admin_login_content .admin_login_form .admin_login_input_info .error {
+  background-color: #ff9991;
+  border-radius: 5px;
+  color: #e01909;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+
+header {
+  background-color: #fff;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 999;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+header .navbar-toggler {
+  background-color: var(--main_color);
+  border: none;
+}
+
+header .navbar-toggler .fa-bars {
+  color: #fff;
+  font-size: 35px;
+}
+
+header .navbar-togger:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .offcanvas .offcanvas-header .fa-user-gear {
+  color: var(--main_color);
+}
+
+header .offcanvas .offcanvas-header .offcanvas-title {
+  color: var(--main_color);
+}
+
+header .offcanvas .offcanvas-body {
+  text-align: center;
+}
+
+header .offcanvas .offcanvas-body .nav-item .nav-link {
+  color: #000;
+}
+
+header .offcanvas .offcanvas-body .nav-item .nav-link .fa-solid {
+  font-size: 15px;
+}
+
+header .offcanvas .offcanvas-body .nav-item .nav-link:hover {
+  color: var(--main_color);
+}
+
+header .offcanvas .offcanvas-body .admin_logout_btn {
+  background-color: var(--main_color);
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+#landing_admin_panel .landing_admin_panel_content {
+  padding: 40px 0 100px 0;
+  text-align: center;
+}
+
+#landing_admin_panel .landing_admin_panel_content .hero_logo img {
+  width: 100%;
+  max-width: 300px;
+}
+
+#landing_admin_panel .landing_admin_panel_content .admin_title h1 {
+  padding-top: 5px;
+  font-size: 25px;
+  color: var(--main_color);
+}
+
+#food_categories .food_categories_content {
+  padding: 30px 0 80px 0;
+}
+
+#food_categories .food_categories_content .food_categories_title {
+  margin-top: 15px;
+  font-size: 28px;
+  color: var(--main_color);
+  font-family: 'Zen Antique', serif;
+}
+
+#food_categories .food_categories_content .food_categories_title::after {
+  content: "";
+  background-color: var(--main_color);
+  width: 50px;
+  height: 4px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+#food_categories .food_categories_content .food_categories_menu_list {
+  margin-top: 20px;
+}
+
+#food_categories .food_categories_content .food_categories_menu_list .food_categories_menu_item_btn {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  background-color: #abc7a9;
+}
+
+#food_categories .food_categories_content .food_categories_menu_list .food_categories_menu_item_btn:hover {
+  background-color: var(--main_color);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #fff;
+}
+
+#insert_food_item .insert_food_item_content {
+  padding: 30px 0 50px 0;
+}
+
+#insert_food_item .insert_food_item_content .back_btn .fa-arrow-circle-left {
+  color: var(--main_color);
+  font-size: 25px;
+}
+
+#insert_food_item .insert_food_item_content .food_category_title {
+  margin-top: 15px;
+  font-family: 'Zen Antique', serif;
+  font-size: 28px;
+  color: var(--main_color);
+}
+
+#insert_food_item .insert_food_item_content .food_category_title::after {
+  content: "";
+  background-color: var(--main_color);
+  width: 50px;
+  height: 4px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+#insert_food_item .insert_food_item_content .food_insert_item_form_modal_btn {
+  padding: 10px;
+  font-size: 18px;
+  background-color: var(--main_color);
+  border: none;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+#insert_food_item .insert_food_item_content .inserted_food_item_list {
+  width: 100%;
+  margin-top: 25px;
+}
+
+#insert_food_item .insert_food_item_content .inserted_food_item_list .table {
+  border-collapse: collapse;
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#insert_food_item .insert_food_item_content .inserted_food_item_list .table thead {
+  background-color: var(--main_color);
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Zen Antique', serif;
+}
+
+#insert_food_item .insert_food_item_content .inserted_food_item_list .table tbody {
+  font-size: 18px;
+}
+
+#insert_food_item .insert_food_item_content .inserted_food_item_list .table tbody td {
+  padding: 15px;
+  background-color: #fff;
+}
+
+#insert_food_item .insert_food_item_content .inserted_food_item_list .table tbody td .food_item_img {
+  max-width: 100%;
+  max-width: 50px;
+  height: 50px;
+}
+
+#insert_food_item .insert_food_item_content .inserted_food_item_list .table tbody td .delete_food_item_btn {
+  background-color: #cf1c04;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#insert_food_item .insert_food_item_content .inserted_food_item_list .table tbody td .update_food_item_btn {
+  background-color: #089afc;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  #insert_food_item .insert_food_item_content .inserted_food_item_list .table {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #insert_food_item .insert_food_item_content .inserted_food_item_list .table tr {
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  }
+  #insert_food_item .insert_food_item_content .inserted_food_item_list .table thead {
+    display: none;
+  }
+  #insert_food_item .insert_food_item_content .inserted_food_item_list .table tbody, #insert_food_item .insert_food_item_content .inserted_food_item_list .table tr, #insert_food_item .insert_food_item_content .inserted_food_item_list .table td {
+    display: block;
+  }
+  #insert_food_item .insert_food_item_content .inserted_food_item_list .table tbody .anime_title, #insert_food_item .insert_food_item_content .inserted_food_item_list .table tr .anime_title, #insert_food_item .insert_food_item_content .inserted_food_item_list .table td .anime_title {
+    color: #E28820;
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+}
+
+.food_insert_item_form {
+  margin-top: 20px;
+}
+
+.food_insert_item_form .food_insert_item_form_content .insert_food_item_title {
+  font-size: 25px;
+  color: var(--main_color);
+  text-align: center;
+  font-family: 'Zen Antique', serif;
+}
+
+.food_insert_item_form .food_insert_item_form_content .insert_food_item_title::after {
+  content: "";
+  background-color: var(--main_color);
+  width: 50px;
+  height: 4px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.food_insert_item_form .food_insert_item_form_content .close_modal_btn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+
+.food_insert_item_form .food_insert_item_form_content form {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.food_insert_item_form .food_insert_item_form_content form .food_insert_item_info_list {
+  margin-top: 20px;
+}
+
+.food_insert_item_form .food_insert_item_form_content form .food_insert_item_info_list input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 3px;
+  font-size: 18px;
+}
+
+.food_insert_item_form .food_insert_item_form_content form .food_insert_item_info_list .insert_food_item_btn {
+  background-color: var(--main_color);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#food_update_item_form {
+  padding: 20px 0 40px 0;
+}
+
+#food_update_item_form .back_btn .fa-arrow-circle-left {
+  color: var(--main_color);
+  font-size: 25px;
+}
+
+#food_update_item_form .food_update_item_form_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#food_update_item_form .food_update_item_form_content form {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 5px;
+  margin-top: 15px;
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#food_update_item_form .food_update_item_form_content form .update_food_item_title {
+  font-size: 25px;
+  color: var(--main_color);
+  text-align: center;
+  font-family: 'Zen Antique', serif;
+}
+
+#food_update_item_form .food_update_item_form_content form .update_food_item_title::after {
+  content: "";
+  background-color: var(--main_color);
+  width: 50px;
+  height: 4px;
+  display: block;
+  margin: 5px auto;
+  border-radius: 10px;
+}
+
+#food_update_item_form .food_update_item_form_content form .food_update_item_info_list {
+  margin-top: 20px;
+}
+
+#food_update_item_form .food_update_item_form_content form .food_update_item_info_list input {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  padding: 3px;
+}
+
+#food_update_item_form .food_update_item_form_content form .food_update_item_info_list .update_food_item_btn {
+  background-color: var(--main_color);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#message_request .message_request_content {
+  padding: 30px 0 50px 0;
+}
+
+#message_request .message_request_content .message_request_title {
+  margin-top: 15px;
+  font-family: 'Zen Antique', serif;
+  font-size: 28px;
+  color: var(--main_color);
+}
+
+#message_request .message_request_content .message_request_title::after {
+  content: "";
+  background-color: var(--main_color);
+  width: 50px;
+  height: 4px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+#message_request .message_request_content .message_request_list {
+  width: 100%;
+}
+
+#message_request .message_request_content .message_request_list .table {
+  border-collapse: collapse;
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#message_request .message_request_content .message_request_list .table thead {
+  background-color: var(--main_color);
+  font-size: 18px;
+  font-family: 'Zen Antique', serif;
+  color: #fff;
+}
+
+#message_request .message_request_content .message_request_list .table tbody {
+  font-size: 18px;
+}
+
+#message_request .message_request_content .message_request_list .table tbody td {
+  padding: 15px;
+  background-color: #fff;
+}
+
+#message_request .message_request_content .message_request_list .table tbody td .delete_food_item_btn {
+  background-color: #d62418;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#message_request .message_request_content .message_request_list .table tbody td .update_food_item_btn {
+  background-color: #089afc;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  #message_request .message_request_content .message_request_list .table {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #message_request .message_request_content .message_request_list .table tr {
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  }
+  #message_request .message_request_content .message_request_list .table thead {
+    display: none;
+  }
+  #message_request .message_request_content .message_request_list .table tbody, #message_request .message_request_content .message_request_list .table tr, #message_request .message_request_content .message_request_list .table td {
+    display: block;
+  }
+  #message_request .message_request_content .message_request_list .table tbody .anime_title, #message_request .message_request_content .message_request_list .table tr .anime_title, #message_request .message_request_content .message_request_list .table td .anime_title {
+    color: #E28820;
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+}
+
+#admin_user_list .admin_user_list_content {
+  padding: 30px 0 50px 0;
+}
+
+#admin_user_list .admin_user_list_content .add_admin_btn {
+  background-color: var(--main_color);
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  -webkit-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+#admin_user_list .admin_user_list_content .table {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#admin_user_list .admin_user_list_content .table thead {
+  background-color: var(--main_color);
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Zen Antique', serif;
+}
+
+#admin_user_list .admin_user_list_content .table tbody {
+  font-size: 18px;
+}
+
+#admin_user_list .admin_user_list_content .table tbody td {
+  padding: 15px;
+  background-color: #fff;
+}
+
+#admin_user_list .admin_user_list_content .table tbody td .admin_delete_admin_user_btn {
+  background-color: #d62418;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#add_admin_form_modal .add_admin_form_modal_content {
+  padding: 20px;
+}
+
+#add_admin_form_modal .add_admin_form_modal_content .add_admin_title {
+  margin-top: 15px;
+  font-family: 'Zen Antique', serif;
+  font-size: 28px;
+}
+
+#add_admin_form_modal .add_admin_form_modal_content .add_admin_title::after {
+  content: "";
+  background-color: var(--main_color);
+  width: 50px;
+  height: 4px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+#add_admin_form_modal .add_admin_form_modal_content form {
+  margin-top: 20px;
+}
+
+#add_admin_form_modal .add_admin_form_modal_content form input {
+  width: 100%;
+  padding: 3px;
+}
+
+#add_admin_form_modal .add_admin_form_modal_content form .add_admin_btn {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: var(--main_color);
+  border: none;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: #fff;
+  width: 200px;
+}
+
+#add_admin_form_modal .add_admin_form_modal_content .close_modal_btn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  right: 15px;
+}
+
+#scroll_to_top_arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  display: none;
+  border: none;
+  z-index: 99;
+}
+
+#scroll_to_top_arrow .fa-arrow-up {
+  font-size: 25px;
+  color: var(--main_color);
+}
+
+#scroll_to_top_arrow.scroll_to_top_arrow_active {
+  display: block;
+}
+
+footer {
+  background-color: var(--main_color);
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+footer .footer_content {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+footer .footer_content .footer_title {
+  font-family: 'Zen Antique', serif;
+  font-size: 23px;
+}
+
+footer .footer_content .footer_title::after {
+  content: "";
+  background-color: #6a8e67;
+  width: 40px;
+  height: 5px;
+  display: block;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+footer .footer_content .members {
+  margin-top: 20px;
+}
+
+footer .footer_content .members li {
+  font-size: 17px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=admin_style.css.map */

@@ -1,0 +1,749 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Antique Soft', serif;
+}
+:root 
+{
+    --main_color: #3e603b;
+}
+
+// ADMIN LOGIN
+
+#admin_login 
+{
+    .admin_login_content 
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        .admin_login_form 
+        {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 2px rgba(0,0,0,0.3);
+            .admin_header 
+            {
+                background-color: var(--main_color);
+                padding: 10px;
+                text-align: center;
+                .admin_login_title
+                {
+                    font-size: 25px;
+                    color: #fff;
+                }
+            }
+            .admin_login_input_info
+            {
+                padding: 20px;
+                label 
+                {
+                    font-size: 18px;
+                }
+                input 
+                {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 3px;
+                }
+                input:focus 
+                {
+                    background-color: #f1f1f1;
+                }
+                .admin_login_btn 
+                {
+                    margin-top: 10px;
+                    border-radius: 10px;
+                    padding: 15px;
+                    border: none;
+                    box-shadow: 0 0 3px 2px rgba(0,0,0,0.2);
+                }
+                .admin_login_btn:hover 
+                {
+                    transition-duration: 0.3s;
+                    background-color: var(--main_color);
+                    color: #fff;
+                }
+                .error 
+                {
+                    background-color: #ff9991;
+                    border-radius: 5px;
+                    color: #e01909;
+                    margin-top: 10px;
+                    font-size: 18px;
+                    text-align: center;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+header 
+{
+    background-color: #fff;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    
+    .navbar-toggler 
+    {
+        background-color: var(--main_color);
+        border: none;
+        .fa-bars 
+        {
+            color: #fff;
+            font-size: 35px;
+        }
+    }
+    .navbar-togger:focus 
+    {   
+        box-shadow: none;
+    }
+
+    .offcanvas 
+    {
+        .offcanvas-header
+        {
+            .fa-user-gear
+            {
+                color: var(--main_color);
+            }
+            .offcanvas-title 
+            {
+                color: var(--main_color);
+            }
+        }
+        .offcanvas-body
+        {
+            text-align: center;
+            .nav-item 
+            {
+                .nav-link 
+                {
+                    color: #000;
+                    .fa-solid
+                    {
+                        font-size: 15px;
+                    }
+                }
+                .nav-link:hover 
+                {
+                    color: var(--main_color);
+                }
+            }
+            .admin_logout_btn 
+            {
+                background-color: var(--main_color);
+                border-radius: 5px;
+                border: none;
+                padding: 5px 10px;
+                color: #fff;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+
+#landing_admin_panel 
+{
+    .landing_admin_panel_content 
+    {
+        padding: 40px 0 100px 0;
+        text-align: center;
+        .hero_logo 
+        {
+            img 
+            {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        .admin_title 
+        {
+            h1 
+            {
+                padding-top: 5px;
+                font-size: 25px;
+                color: var(--main_color);
+            }
+        }
+    }
+
+}
+
+
+// FOOD CATEGORIES
+
+#food_categories
+{
+    .food_categories_content
+    {
+        padding: 30px 0 80px 0;
+        .food_categories_title
+        {
+            margin-top: 15px;
+            font-size: 28px;
+            color: var(--main_color);
+            font-family: 'Zen Antique', serif;
+        }
+        .food_categories_title::after
+        {
+            content: "";
+            background-color: var(--main_color);
+            width: 50px;
+            height: 4px;
+            display: block;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+        .food_categories_menu_list
+        {
+            margin-top: 20px;
+            .food_categories_menu_item_btn
+            {
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+                border: none;
+                background-color: #abc7a9;
+            }
+            .food_categories_menu_item_btn:hover
+            {
+                background-color: var(--main_color);
+                transition-duration: 0.5s;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// INSERT FOOD ITEM
+
+#insert_food_item
+{
+    .insert_food_item_content
+    {
+        padding: 30px 0 50px 0;
+        .back_btn
+        {
+            .fa-arrow-circle-left
+            {
+               color: var(--main_color);
+               font-size: 25px;
+            }
+        }
+        .food_category_title
+        {
+            margin-top: 15px;
+            font-family: 'Zen Antique', serif;
+            font-size: 28px;
+            color: var(--main_color);
+        }
+        .food_category_title::after
+        {
+            content: "";
+            background-color: var(--main_color);
+            width: 50px;
+            height: 4px;
+            display: block;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+        .food_insert_item_form_modal_btn
+        {
+            padding: 10px;
+            font-size: 18px;
+            background-color: var(--main_color);
+            border: none;
+            box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+            border-radius: 20px;
+            margin-top: 10px;
+            color: #fff;
+        }
+        .inserted_food_item_list
+        {
+            width: 100%;
+            margin-top: 25px;
+            .table
+            {
+                border-collapse: collapse;
+                box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+                thead 
+                {
+                    background-color: var(--main_color);
+                    font-size: 16px;
+                    color: #fff;
+                    font-family: 'Zen Antique', serif;
+                }
+                tbody   
+                {
+                    font-size: 18px;
+                    td 
+                    {
+                        padding: 15px;
+                        background-color: #fff;
+                        .food_item_img
+                        {
+                            max-width: 100%;
+                            max-width: 50px;
+                            height: 50px;
+                        }
+                        .delete_food_item_btn
+                        {
+                            background-color: #cf1c04;
+                            padding: 10px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
+                        .update_food_item_btn
+                        {
+                            background-color: #089afc;
+                            padding: 10px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+            @media(max-width: 700px) {
+                .table 
+                {
+                    box-shadow: none;
+                    tr 
+                    {
+                        margin-bottom: 20px;    
+                        box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+                    }  
+                    thead 
+                    {
+                        display: none;
+                    }   
+                    tbody, tr, td
+                    {
+                        display: block;
+
+                        .anime_title 
+                        {
+                            color: #E28820;
+                            font-family: 'Mochiy Pop P One', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// INSERT ITEM FORM
+
+.food_insert_item_form
+{
+    margin-top: 20px;
+    .food_insert_item_form_content
+    {
+        .insert_food_item_title
+        {
+            font-size: 25px;
+            color: var(--main_color);
+            text-align: center;
+            font-family: 'Zen Antique', serif;
+        }
+        .insert_food_item_title::after
+        {
+            content: "";
+            background-color: var(--main_color);
+            width: 50px;
+            height: 4px;
+            display: block;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+        .close_modal_btn 
+        {
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+        }
+        form
+        {
+            background-color: #fff;
+            width: 100%;
+            padding: 20px;
+            border-radius: 5px;    
+            .food_insert_item_info_list
+            {
+                margin-top: 20px;
+                input 
+                {
+                    margin-bottom: 10px;
+                    width: 100%;
+                    padding: 3px;
+                    font-size: 18px;
+                }
+                .insert_food_item_btn
+                {
+                    background-color: var(--main_color);
+                    border: none;
+                    color: #fff;
+                    padding: 10px;
+                    max-width: 200px;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+// FOOD UPDATE FORM 
+
+#food_update_item_form
+{
+    
+    padding: 20px 0 40px 0;
+    .back_btn
+        {
+            .fa-arrow-circle-left
+            {
+               color: var(--main_color);
+               font-size: 25px;
+            }
+        }
+    .food_update_item_form_content
+    {
+        display: flex;
+        justify-content: center;
+        form
+        {
+            background-color: #fff;
+            width: 100%;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 5px;    
+            margin-top: 15px;
+            box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+
+            .update_food_item_title
+            {
+                font-size: 25px;
+                color: var(--main_color);
+                text-align: center;
+                font-family: 'Zen Antique', serif;
+            }
+            .update_food_item_title::after
+            {
+                content: "";
+                background-color: var(--main_color);
+                width: 50px;
+                height: 4px;
+                display: block;
+                margin: 5px auto;
+                border-radius: 10px;
+            }
+            .food_update_item_info_list
+            {
+                margin-top: 20px;
+                input
+                {
+                    margin-bottom: 10px;
+                    width: 100%;
+                    font-size: 18px;
+                    padding: 10px;
+                    padding: 3px;
+                }
+                .update_food_item_btn
+                {
+                    background-color: var(--main_color);
+                    color: #fff;
+                    border: none;
+                    padding: 10px;
+                    max-width: 200px;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+// MESSAGE REQUEST
+
+#message_request 
+{
+    .message_request_content
+    {
+        padding: 30px 0 50px 0;
+        .message_request_title
+        {
+            margin-top: 15px;
+            font-family: 'Zen Antique', serif;
+            font-size: 28px;
+            color: var(--main_color);
+        }
+        .message_request_title::after
+        {
+            content: "";
+            background-color: var(--main_color);
+            width: 50px;
+            height: 4px;
+            display: block;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+        .message_request_list 
+        {
+            width: 100%;
+            .table
+            {
+                border-collapse: collapse;
+                box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+                thead 
+                {
+                    background-color: var(--main_color);
+                    font-size: 18px;
+                    font-family: 'Zen Antique', serif;
+                    color: #fff;
+                }
+                tbody   
+                {
+                    font-size: 18px;
+                    td 
+                    {
+                        padding: 15px;
+                        background-color: #fff;
+                        .delete_food_item_btn
+                        {
+                            background-color: #d62418;
+                            padding: 10px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
+                        .update_food_item_btn
+                        {
+                            background-color: #089afc;
+                            padding: 10px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+            @media(max-width: 700px) {  
+                .table 
+                {
+                    box-shadow: none;
+                    tr 
+                    {
+                        margin-bottom: 20px;    
+                        box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+                    }  
+                    thead 
+                    {
+                        display: none;
+                    }   
+                    tbody, tr, td
+                    {
+                        display: block;
+
+                        .anime_title 
+                        {
+                            color: #E28820;
+                            font-family: 'Mochiy Pop P One', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ADMIN LIST 
+
+#admin_user_list 
+{
+    .admin_user_list_content
+    {
+        padding: 30px 0 50px 0;
+        .add_admin_btn 
+        {
+            background-color: var(--main_color);
+            border-radius: 10px;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            box-shadow: 0 0 3px 2px rgba(0,0,0,0.1); 
+        }
+        .table 
+        {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+            thead 
+            {
+                background-color: var(--main_color);
+                font-size: 18px;
+                color: #fff;
+                font-family: 'Zen Antique', serif;
+            }
+            tbody   
+            {
+                font-size: 18px;
+                td 
+                {
+                    padding: 15px;
+                    background-color: #fff;
+                    .admin_delete_admin_user_btn
+                    {
+                        background-color: #d62418;
+                        padding: 10px;
+                        color: #fff;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ADD ADMIN 
+
+#add_admin_form_modal 
+{
+    .add_admin_form_modal_content
+    {
+        padding: 20px;
+        .add_admin_title
+        {
+            margin-top: 15px;
+            font-family: 'Zen Antique', serif;
+            font-size: 28px;
+        }
+        .add_admin_title::after
+        {
+            content: "";
+            background-color: var(--main_color);
+            width: 50px;
+            height: 4px;
+            display: block;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+        form 
+        {
+            margin-top: 20px;
+            input 
+            {
+                width: 100%;
+                padding: 3px
+            }
+            .add_admin_btn 
+            {
+                padding: 10px;
+                margin-top: 20px;
+                font-size: 18px;
+                background-color: var(--main_color);
+                border: none;
+                box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+                border-radius: 20px;
+                color: #fff;
+                width: 200px;
+            }
+        }
+        .close_modal_btn 
+        {
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            position: absolute;
+            right: 15px;
+        }
+    }
+}
+
+// SCROLL TO TOP ARROW 
+
+#scroll_to_top_arrow
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.3);
+    display: none;
+    border: none;
+    z-index: 99;
+    .fa-arrow-up
+    {
+        font-size: 25px;
+        color: var(--main_color);
+    }
+}
+#scroll_to_top_arrow.scroll_to_top_arrow_active
+{
+    display: block;
+}
+
+// ADMIN FOOTER
+
+footer 
+{
+    background-color: var(--main_color);
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    .footer_content
+    {
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+        .footer_title
+        {
+            font-family: 'Zen Antique', serif;
+            font-size: 23px;
+        }
+        .footer_title::after
+        {
+            content: "";
+            background-color: #6a8e67;
+            width: 40px;
+            height: 5px;
+            display: block;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+        .members    
+        {
+            margin-top: 20px;
+            li 
+            {
+                font-size: 17px;
+                list-style: none;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
